@@ -8,11 +8,11 @@ on:
     branches:
       - main
 jobs:
-  validate-client:
+  validate:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: client
+        working-directory: portfolio
     steps:
       - uses: actions/checkout@v4
 
