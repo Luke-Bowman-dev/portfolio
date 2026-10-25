@@ -17,7 +17,6 @@ export function Hero() {
             Contact
           </a>
         </div>
-
       </div>
     </section>
   );
