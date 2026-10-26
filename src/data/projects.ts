@@ -26,7 +26,8 @@ export const projects: Project[] = [
     id: "WorkspaceHub",
     name: "WorkspaceHub",
     githubUrl: "https://github.com/Luke-Bowman-dev/ai-se_project_workspacehub",
-    liveUrl: "https://ai-se-project-workspacehub-e3sl-git-work-03aa54-luke-bowman-dev.vercel.app/login",
+    liveUrl:
+      "https://ai-se-project-workspacehub-e3sl-git-work-03aa54-luke-bowman-dev.vercel.app/login",
     image: workspaceImage,
     description: [
       "WorkspaceHub is a full-stack MERN application built with TypeScript on both the client and server. It supports multi-tenant organizations, role-based access, projects, tasks, bookings, and per-organization feature flags.",
