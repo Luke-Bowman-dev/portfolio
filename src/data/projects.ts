@@ -1,16 +1,18 @@
 import type { Project } from "../types";
 import meshAiImage from "../assets/meshAi.png";
 import workspaceImage from "../assets/WorkspaceHub.png";
-import portfolioImage from "../assets/Portfolio.png";
+import flashcardImage from "../assets/flashcard.png";
 
 export const projects: Project[] = [
   {
-    id: "portfolio",
-    name: "Portfolio",
-    description: ["This is my personal website."],
-    githubUrl: "#",
-    liveUrl: "#",
-    image: portfolioImage,
+    id: "flashcard",
+    name: "Flash Cards",
+    description: [
+      "Flash Cards is a dynamic web application that allows users to create, manage, and view flashcard decks for the purpose of learning any subject they desire.",
+    ],
+    githubUrl: "https://github.com/Luke-Bowman-dev/ai-se_project_flashcards",
+    liveUrl: "https://luke-bowman-dev.github.io/ai-se_project_flashcards/",
+    image: flashcardImage,
   },
   {
     id: "meshAi",

@@ -9,6 +9,7 @@ export const skills: SkillGroup[] = [
     category: "Frontend",
     items: [
       "React",
+      "Vite",
       "Next.js",
       "TypeScript",
       "Styled Components",
@@ -18,10 +19,18 @@ export const skills: SkillGroup[] = [
 
   {
     category: "Backend",
-    items: ["Node.js", "Express.js", "MongoDB"],
+    items: ["Node.js", "Express", "MongoDB", "REST APIs", "RAG"],
   },
   {
     category: "Tools",
-    items: ["Git", "GitHub", "Postman"],
+    items: [
+      "Git",
+      "GitHub Actions",
+      "Postman",
+      "Figma",
+      "Docker",
+      "AWS",
+      "Vercel",
+    ],
   },
 ];
