@@ -3,6 +3,7 @@ import { Header } from "../Header/Header.tsx";
 import { Hero } from "../Hero/Hero.tsx";
 import { Projects } from "../Projects/Projects.tsx";
 import { Skills } from "../Skills/Skills.tsx";
+import { Footer } from "../Footer/Footer.tsx";
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
       <Hero />
       <Projects />
       <Skills />
+      <Footer />
     </div>
   );
 }
