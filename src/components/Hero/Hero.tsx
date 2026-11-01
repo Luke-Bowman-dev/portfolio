@@ -20,7 +20,7 @@ export function Hero() {
         <div className="hero__links">
           <a
             className="hero__link hero__link-projects"
-            href="#"
+            href="#projects"
             onMouseEnter={() => setIsHovered1(true)}
             onMouseLeave={() => setIsHovered1(false)}
           >
@@ -31,7 +31,7 @@ export function Hero() {
           </a>
           <a
             className="hero__link hero__link-contacts"
-            href="#"
+            href="#contact"
             onMouseEnter={() => setIsHovered2(true)}
             onMouseLeave={() => setIsHovered2(false)}
           >
