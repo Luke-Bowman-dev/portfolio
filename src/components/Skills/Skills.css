@@ -56,3 +56,12 @@
   align-items: center;
   text-align: center;
 }
+
+@media (max-width: 1100px) {
+  .skills {
+    margin-left: 20px;
+  }
+  .skills__list {
+    flex-direction: column;
+  }
+}
