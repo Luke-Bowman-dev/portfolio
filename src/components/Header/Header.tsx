@@ -10,7 +10,7 @@ import { Contact } from "../Contact/Contact.tsx";
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
-  
+
   return (
     <div className="header-container">
       <header className="header">
@@ -18,7 +18,7 @@ export function Header() {
           {profile.name}
         </a>
         <button
-        className="header__nav-btn"
+          className="header__nav-btn"
           type="button"
           aria-expanded={isOpen}
           aria-controls="header-nav"
@@ -27,7 +27,18 @@ export function Header() {
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
-          <img className="header__nav-img" src={isOpen ? (isHovered ? closeButtonImageHover : closeButtonImage) : (isHovered ? menuImageHover : menuImage)}/>
+          <img
+            className="header__nav-img"
+            src={
+              isOpen
+                ? isHovered
+                  ? closeButtonImageHover
+                  : closeButtonImage
+                : isHovered
+                  ? menuImageHover
+                  : menuImage
+            }
+          />
         </button>
         <nav className="header__nav">
           <a className="header__link" href="#home">
@@ -46,16 +57,32 @@ export function Header() {
       </header>
       <div className={isOpen ? "mobile-menu_open" : "mobile-menu_closed"}>
         <nav className="mobile-menu__nav">
-          <a className="mobile-menu__link" href="#home">
+          <a
+            className="mobile-menu__link"
+            href="#home"
+            onClick={() => setIsOpen(false)}
+          >
             Home
           </a>
-          <a className="mobile-menu__link" href="#skills">
+          <a
+            className="mobile-menu__link"
+            href="#skills"
+            onClick={() => setIsOpen(false)}
+          >
             Skills
           </a>
-          <a className="mobile-menu__link" href="#projects">
+          <a
+            className="mobile-menu__link"
+            href="#projects"
+            onClick={() => setIsOpen(false)}
+          >
             Projects
           </a>
-          <a className="mobile-menu__link" href="#contact">
+          <a
+            className="mobile-menu__link"
+            href="#contact"
+            onClick={() => setIsOpen(false)}
+          >
             Contact
           </a>
         </nav>

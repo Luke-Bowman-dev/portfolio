@@ -11,7 +11,7 @@ export function Hero() {
   const [isHovered2, setIsHovered2] = useState(false);
 
   return (
-    <section className="hero">
+    <section className="hero" id="home">
       <div className="hero__content">
         <p className="hero__greeting">HI, I'M</p>
         <h1 className="hero__name">{profile.name}</h1>

@@ -21,7 +21,7 @@
   padding: 0;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1000px) {
   .projects__title {
     margin-left: 20px;
   }

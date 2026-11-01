@@ -11,7 +11,7 @@ export function Projects({ projects: projectsProp }: ProjectsProps) {
   const projectsToDisplay = projectsProp || projects;
 
   return (
-    <div className="projects">
+    <div className="projects" id="projects">
       <h1 className="projects__title">Projects</h1>
       <ul className="projects__list">
         {projectsToDisplay.map((project) => (

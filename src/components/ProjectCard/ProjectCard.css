@@ -58,7 +58,7 @@
   object-fit: cover;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1000px) {
   .project-card {
     height: 392px;
     width: calc(100vw - 40px);

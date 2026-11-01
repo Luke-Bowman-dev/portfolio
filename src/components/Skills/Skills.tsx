@@ -3,7 +3,7 @@ import { skills } from "../../data/skills";
 
 export function Skills() {
   return (
-    <div className="skills">
+    <div className="skills" id="skills">
       <h1 className="skills__title">Skills</h1>
       <ul className="skills__list">
         {skills.map((group) => (
