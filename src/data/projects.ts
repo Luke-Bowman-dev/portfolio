@@ -1,5 +1,5 @@
 import type { Project } from "../types";
-import meshAiImage from "../assets/meshAi.png";
+import meshAiImage from "../assets/MeshAI.png";
 import workspaceImage from "../assets/WorkspaceHub.png";
 import flashcardImage from "../assets/flashcard.png";
 
