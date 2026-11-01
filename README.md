@@ -1,73 +1,90 @@
-# React + TypeScript + Vite
+# Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This is a personal portfolio website built using React. It showcases projects, skills, and provides contact information. The website is styled with CSS and uses React state management for interactive elements like navigation menus and hover effects.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Live Link
 
-## React Compiler
+[Check out the live website.](https://portfolio-git-sprint-12-luke-bowman-dev.vercel.app/)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+- **Responsive Design**: The website adapts to different screen sizes.
+- **Interactive Navigation**: A toggleable navigation menu for mobile devices.
+- **Hover Effects**: Smooth image transitions on hover for links and social media icons.
+- **Project Showcase**: Displays projects with descriptions, GitHub links, and live URLs.
+- **Skill List**: Organized list of skills categorized by technology areas.
+- **Contact Information**: Email, location, resume download, and social media links.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Technologies Used
 
-```js
-export default defineConfig([
-  globalIgnores(["dist"]),
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [
-      // Other configs...
+- **React**: JavaScript library for building user interfaces.
+- **CSS**: Styling for the website.
+- **GitHub Actions**: Continuous integration for deployment.
+- **Vercel**: Hosting platform for the website.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Setup Instructions
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
+1. **Clone the Repository**:
+
+   ```bash
+   git clone https://github.com/your-username/your-repository.git
+   cd your-repository
+   ```
+
+2. **Install Dependencies**:
+
+   ```bash
+   npm install
+   ```
+
+3. **Run the Development Server**:
+
+   ```bash
+   npm start
+   ```
+
+   This will start the development server and open the website in your default browser.
+
+## Deployment
+
+The website is automatically deployed using GitHub Actions and hosted on Vercel. Any changes pushed to the `main` branch will trigger a deployment.
+
+### GitHub Actions Workflow
+
+The workflow is defined in `.github/workflows/ci.yml` and includes steps for building and deploying the website.
+
+## Directory Structure
+
 ```
-
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from "eslint-plugin-react-x";
-import reactDom from "eslint-plugin-react-dom";
-
-export default defineConfig([
-  globalIgnores(["dist"]),
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs["recommended-typescript"],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
+/src
+  /components
+    /App
+      // App Component + Style
+    /Header
+      // Header Component + Style
+    /Hero
+      // Hero Component + Style
+    /Projects
+      // Projects Component + Style
+    /ProjectCard
+      // ProjectCard Component + Style
+    /Skills
+      // Skills Component + Style
+    /Footer
+      // Footer Component + Style
+    /Contact
+      // Contact Component + Style
+  /assets
+    // Images and other assets
+  /data
+    profile.ts
+    projects.ts
+    skills.ts
+  types.ts
+.gitignore
+package.json
+README.md
+tsconfig.json
 ```
