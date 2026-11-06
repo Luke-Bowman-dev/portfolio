@@ -118,8 +118,16 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 380px) {
   .header__profile {
-    margin-left: 40px;
+    margin-left: 50px;
+  }
+
+  .header__nav-btn {
+    margin-right: 35px;
+  }
+
+  .header {
+    padding: 0;
   }
 }

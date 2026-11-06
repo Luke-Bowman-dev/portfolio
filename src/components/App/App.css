@@ -14,8 +14,8 @@
   margin: 0;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 380px) {
   .app {
-    margin-left: 10px;
+    margin-left: 80px;
   }
 }
