@@ -1,0 +1,32 @@
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.projects__title {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 44px;
+  margin: 0;
+}
+
+.projects__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  padding: 0;
+}
+
+@media (max-width: 1000px) {
+  .projects__title {
+    margin-left: 20px;
+  }
+
+  .projects__list {
+    flex-direction: column;
+  }
+}
