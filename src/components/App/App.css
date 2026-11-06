@@ -13,9 +13,3 @@
   line-height: 1;
   margin: 0;
 }
-
-@media (max-width: 380px) {
-  .app {
-    margin-left: 80px;
-  }
-}
