@@ -93,7 +93,7 @@
   }
 
   .header__profile {
-    margin-left: 40px;
+    margin-left: 20px;
   }
 
   .header__nav-btn {
@@ -115,12 +115,5 @@
 
   .header__nav {
     display: none;
-  }
-}
-
-@media (max-width: 500px) {
-  .header {
-    padding-right: 0px;
-    padding-left: 5px;
   }
 }
